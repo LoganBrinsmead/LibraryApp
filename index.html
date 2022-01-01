@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Library App</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Library.js</h1>
+            <button data-modal-target="#modal">ADD BOOK</button>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title">Example Modal</div>
+                </div>
+                <div class="modal-body">
+                    <div>Book Title</div>
+                    <input id="bookTitle" class="textfield">
+                    <div>Author</div>
+                    <input id="bookAuthor" class="textfield">
+                    <div>Number of Pages</div>
+                    <input id="bookPages" type="number" min="1" max="1000" class="textfield">
+                    <div>Have you read it?</div>
+                    <button id="bookRead">Yes</button>
+                    <button id="bookNotRead">No</button>
+                    <button id="confirm">Confirm and Add Book</button>
+                    <button data-close-button class="close-button">Cancel</button>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div>
+        <div class="content">
+            <div class="books"></div>
+        </div>
+        <footer>Made by Logan Brinsmead</footer>
+    </body>
+</html>

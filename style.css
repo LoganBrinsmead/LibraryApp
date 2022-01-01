@@ -1,0 +1,129 @@
+html {
+    font-family: 'Brush Script MT', cursive, 'Times New Roman', serif, sans-serif;
+}
+
+/* Modal styles */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 15px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+/* Modal styles */
+
+body {
+    background-color: #F2F3F7;
+}
+
+h1 {
+    color: #F2F3F7;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #A3581E;
+    padding: 32px;
+}
+
+button {
+    padding: 16px;
+    border-radius: 15px;
+    background-color: #289FE3;
+    color: #F2F3F7;
+    font-weight: bold;
+}
+
+.books {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.bookCard {
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: green;
+
+}
+
+.error {
+    border: solid red 1px;
+    color: rgb(219, 80, 80);
+}
+
+.notRead {
+    background-color: red;
+}
+
+footer {
+    background-color: #A3581E;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    padding: 16px;
+
+}
